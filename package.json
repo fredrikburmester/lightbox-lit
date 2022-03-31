@@ -2,7 +2,9 @@
   "name": "starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.ts",
+  "type": "commonjs",
+  "module": "main.ts",
   "scripts": {
     "start": "webpack-dev-server --config-name=dev",
     "build": "webpack --config-name=prod"
