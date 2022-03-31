@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>html { font-family:Arial; --color:hotpink; }</style>
+    <title>Webcomponents with LitElement</title>
+</head>
+<body>
+    <lightbox-card id="lightbox" url="https://avatars.githubusercontent.com/u/26228321?v=4"></lightbox-card>
+    <script>
+        let images = [
+            {
+                src: 'https://avatars.githubusercontent.com/u/26228321?v=4',
+            },
+            {
+                src: 'https://fredrik.studio/static/images/Home/thumbs/1.jpg',
+            }
+        ]
+        document.getElementById('lightbox').setAttribute('images', JSON.stringify(images))
+    </script>
+</body>
+
+</html>
